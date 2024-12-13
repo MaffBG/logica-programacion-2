@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Conversiòn de temperaturas</title>
+
+    <!--LINK DE CSS-->
+    <link href="./ConversorDeTemperaturas.css" rel="stylesheet">
+
+    <!--LINK DE FUENTE DE GOOGLE-->
+    <!--LINK A FUENTE DE GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="secondContainer">
+            <h1>De Celsius a Fahrenheit y Kelvin</h1>
+            <label for="input-temperature">Ingresa la temperatura en grados Celsius:</label>
+            <input type="number" id="input-temperature" placeholder="Sólo ingresa un nùmero">
+            <button onclick="convertirTemperatura()">Convertir</button>
+        </div>
+        <img src="./IMAGENES/Termometro.png">
+        <div class="resultsContainer">
+            <h2>Resultados</h2>
+            <div class="resultsContainer2">
+                <div class="resultContainerBox" id="fahrenheit-box">
+                    <h3>Fahrenheit</h3>
+                    <p id="fahrenheit-result">--</p>
+                </div>
+                <div class="resultContainerBox" id="kelvin-box">
+                    <h3>Kelvin</h3>
+                    <p id="kelvin-result">--</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="./ConversorDeTemperaturas.js"></script>
+
+</body>
+<br><br>
+<footer class="lastContainer">María Fernanda Ballesteros García | CH48 GENERATION</footer>
+
+</html>
